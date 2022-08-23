@@ -1,11 +1,35 @@
 const TweeterRender  = function(){
 
+    let noUserPosts = true
+
     const renderPosts = function(posts){
         $("#posts").empty()
 
-        for(let post of posts){
-            let postDiv = createPostElement(post)
+        if(posts.length===0 && noUserPosts){
+            noUserPosts=false
+            let postDiv = createPostElement(
+                {
+                text: `it seems like nothing has been posted yet, be the first to post!`,
+                id: "p0",
+                comments: [
+                    {
+                        text: `you can try to comment in our post, but it just wont work! :)`,
+                        id: "c0",
+                    },
+                    {
+                        text: `just go ahad and write your own!!!`,
+                        id: "c00",
+                    }
+                ]
+            }
+            )
             $("#posts").append(postDiv)
+        }else{
+            noUserPosts = true
+            for(let post of posts){
+                let postDiv = createPostElement(post)
+                $("#posts").append(postDiv)
+            }
         }
     }
 
@@ -37,7 +61,7 @@ const createCommentElements = function(commentsArray){
 
     for(let comment of commentsArray){
 
-        let concatedComment = `<div class=delete-comment>delete</div>`
+        let concatedComment = `<div class=delete-comment>x</div>`
         concatedComment += `<div class="comment" ; id=${comment.id}>${comment.text}</div>`
 
         concatedLines += `<div class="commentLine">${concatedComment}</div>`
@@ -58,3 +82,5 @@ const createCommentElements = function(commentsArray){
         } 
 
 */
+
+//
