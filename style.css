@@ -1,0 +1,126 @@
+body{
+    background-color: #ecf0f1;
+    font-family: 'Balthazar', serif;
+}
+
+#container{
+    display: grid;
+    grid-gap: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    "h h" "i i" "b b" "p p"
+}
+
+#title{
+    grid-area: h;
+    color: #3498db;
+    font-size: 7vw;
+    margin: auto;
+}
+
+#input{
+    grid-area: i;
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 1.5vw;
+    text-align:center;
+}
+
+#posts{
+    grid-area: p;
+}
+
+#postbtn{
+    grid-area: b;
+    padding: 10px;
+    background-color: #3498db;
+    border: 1px solid #2980b9;
+    box-shadow: 1px 1px 5px #2c3e50;
+    cursor: pointer;
+    display: flex;
+    font-size: 2.5vw;
+    width: 10%;
+    margin: auto;
+    justify-content: center;
+}
+
+.post{
+    position: relative;
+    background-color: #a8d1dc;
+    box-shadow: 1px 1px 3px;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#postbtn:active{
+    background-color: #2980b9
+}
+
+.post-text{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+.commentsContainer{
+    padding: 7px;
+    margin: 10px;
+    background-color:  #d4e2e6;
+    border-radius: 10px;
+}
+
+.commentLine{
+    display: flex;
+    margin: 10px;
+    align-items: flex-start;
+}
+
+ .comment{
+    max-width: 90%;
+    display: inline-block;
+    padding-left: 5px;
+    color: #00206b;
+    word-wrap: break-word;
+    font-size: 1em;
+ }
+ 
+.comment-input{
+    margin:10px;
+    background-color: #a2d2a3;
+    border: 1px solid #7ab07a;
+}
+
+.comment-btn{
+    grid-area: b;
+    background-color: #62d065;
+    border: 1px solid #a2d2a3;
+    box-shadow: 1px 1px 3px #2c5036;
+    cursor: pointer;
+    margin: auto;
+    justify-content: center;
+}
+
+.delete-comment{
+    display: inline-block;
+    cursor: pointer;
+    color: #ecf0f1;
+    background-color: #e66152;
+    padding: 3px;
+    border-radius: 4px;
+    font-size: 0.8em;
+}
+
+
+.delete-post{
+    cursor: pointer;
+    color: #e74c3c;
+    position: absolute;
+    top:4px;
+    right:4px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.5em;
+}
