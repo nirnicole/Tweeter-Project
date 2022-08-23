@@ -55,6 +55,10 @@ body{
     padding: 10px;
 }
 
+.post-hidden{
+    display: none;
+}
+
 #postbtn:active{
     background-color: #2980b9
 }
@@ -89,7 +93,8 @@ body{
  
 .comment-input{
     margin:10px;
-    background-color: #a2d2a3;
+    padding: 7px;
+    background-color: #d2e2d3;
     border: 1px solid #7ab07a;
 }
 
