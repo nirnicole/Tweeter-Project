@@ -143,3 +143,23 @@ body{
     border-radius: 0.2em;;
     font-size: 0.8em;
 }
+
+/*Floating Back-To-Top Button*/
+#home-btn {
+    cursor: pointer;
+    position: fixed;
+    bottom: 1em;
+    float: right;
+    right: 0;
+    max-width: 1.5em;
+    width: 100%;
+    font-size: 1em;
+    border-color: rgba(85, 85, 85, 0.2);
+    color: rgb(5, 0, 59);
+    justify-items: center;
+}
+/*On Hover Color Change*/
+#home-btn:hover {
+    color: rgb(100,100,100);
+}
+
