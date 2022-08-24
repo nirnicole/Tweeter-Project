@@ -68,49 +68,54 @@ body{
     word-wrap: break-word;
     max-width: 100%;
     font-weight: bold;
-    margin-left: 2%;
+    font-size: 1.7em;
+    margin: 0.7em;
 }
 
 
 .commentsContainer{
-    padding: 1%;
-    margin: 2%;
+    margin: 1em;
     border-radius: 10px;
 }
 
 .commentLine{
     display: flex;
-    margin: 2%;
+    margin-bottom: 0.5em;
     align-items: flex-start;
     background-color:  #d4e2e6;
-    padding: 2%;
+    padding: 0.3em;
     border-radius: 3px;
 }
 
  .comment-text{
     max-width: 90%;
     display: inline-block;
-    padding-left: 2%;
+    padding-left:0.4em;
     color: #00206b;
     word-wrap: break-word;
     font-size: 1em;
  }
  
 .comment-input{
-    margin: 2%;
-    padding: 1%;
+    margin-left: 1.5em;
     background-color: #d2e2d3;
     border: 1px solid #7ab07a;
+    font-size: 0.7em;
+    padding:0.4em;
 }
 
 .comment-btn{
     grid-area: b;
     background-color: #62d065;
     border: 1px solid #a2d2a3;
+    border-radius: 0.2em;
     box-shadow: 1px 1px 3px #2c5036;
     cursor: pointer;
-    margin: auto;
     justify-content: center;
+    font-size: 0.6em;
+    margin-left: 0.3em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
 }
 
 .delete-comment{
@@ -118,9 +123,11 @@ body{
     cursor: pointer;
     color: #ecf0f1;
     background-color: #e66152;
-    padding: 1%;
+    padding: 0.2em;
     border-radius: 4px;
     font-size: 0.8em;
+    align-self: center;
+    margin-right:  0.4em;
 }
 
 
