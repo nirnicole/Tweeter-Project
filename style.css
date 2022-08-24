@@ -23,18 +23,19 @@ body{
 #input{
     grid-area: i;
     background-color: #ffffff;
-    padding: 10px;
+    padding: 2%;
     font-size: 1.5vw;
     text-align:center;
 }
 
 #posts{
+    
     grid-area: p;
 }
 
 #postbtn{
     grid-area: b;
-    padding: 10px;
+    padding: 2%;
     background-color: #3498db;
     border: 1px solid #2980b9;
     box-shadow: 1px 1px 5px #2c3e50;
@@ -50,9 +51,9 @@ body{
     position: relative;
     background-color: #a8d1dc;
     box-shadow: 1px 1px 3px;
-    margin: 10px;
+    margin: 2%;
     border-radius: 5px;
-    padding: 10px;
+    padding: 2%;
 }
 
 .post-hidden{
@@ -64,36 +65,40 @@ body{
 }
 
 .post-text{
+    word-wrap: break-word;
+    max-width: 100%;
     font-weight: bold;
-    margin-left: 10px;
+    margin-left: 2%;
 }
 
 
 .commentsContainer{
-    padding: 7px;
-    margin: 10px;
-    background-color:  #d4e2e6;
+    padding: 1%;
+    margin: 2%;
     border-radius: 10px;
 }
 
 .commentLine{
     display: flex;
-    margin: 10px;
+    margin: 2%;
     align-items: flex-start;
+    background-color:  #d4e2e6;
+    padding: 2%;
+    border-radius: 3px;
 }
 
- .comment{
+ .comment-text{
     max-width: 90%;
     display: inline-block;
-    padding-left: 5px;
+    padding-left: 2%;
     color: #00206b;
     word-wrap: break-word;
     font-size: 1em;
  }
  
 .comment-input{
-    margin:10px;
-    padding: 7px;
+    margin: 2%;
+    padding: 1%;
     background-color: #d2e2d3;
     border: 1px solid #7ab07a;
 }
@@ -113,7 +118,7 @@ body{
     cursor: pointer;
     color: #ecf0f1;
     background-color: #e66152;
-    padding: 3px;
+    padding: 1%;
     border-radius: 4px;
     font-size: 0.8em;
 }
@@ -123,9 +128,9 @@ body{
     cursor: pointer;
     color: #e74c3c;
     position: absolute;
-    top:4px;
-    right:4px;
-    padding: 5px;
+    top: 1%;
+    right:1%;
+    padding: 1%;
     border-radius: 5px;
-    font-size: 0.5em;
+    font-size: 0.8em;
 }
