@@ -51,9 +51,10 @@ body{
     position: relative;
     background-color: #a8d1dc;
     box-shadow: 1px 1px 3px;
-    margin: 2%;
+    margin: 0.7em;;
     border-radius: 5px;
-    padding: 2%;
+    padding: 0.3em;;
+    padding-bottom: 1em;;
 }
 
 .post-hidden{
@@ -75,7 +76,7 @@ body{
 
 .commentsContainer{
     margin: 1em;
-    border-radius: 10px;
+    border-radius: 0.5em;;
 }
 
 .commentLine{
@@ -123,8 +124,9 @@ body{
     cursor: pointer;
     color: #ecf0f1;
     background-color: #e66152;
-    padding: 0.2em;
-    border-radius: 4px;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    border-radius: 0.2em;;
     font-size: 0.8em;
     align-self: center;
     margin-right:  0.4em;
@@ -135,9 +137,9 @@ body{
     cursor: pointer;
     color: #e74c3c;
     position: absolute;
-    top: 1%;
-    right:1%;
-    padding: 1%;
-    border-radius: 5px;
+    top: 0.1em;
+    right:0.3em;
+    padding: 0.2em;
+    border-radius: 0.2em;;
     font-size: 0.8em;
 }
