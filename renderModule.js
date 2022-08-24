@@ -42,7 +42,7 @@ const TweeterRender  = function(){
 
 const createPostElement = function(post){
 
-    let deletePost = `<div class="delete-post">X</div>`
+    let deletePost = `<div class="delete-post">&#10006</div>`
     let postHeader = `<h1 class="post-text"> ${post.text} </h1>`
     let comments = createCommentElements(post.comments)
     let commentsContainerDiv = `<div class=commentsContainer>${comments}</div>`
@@ -61,7 +61,7 @@ const createCommentElements = function(commentsArray){
 
     for(let comment of commentsArray){
 
-        let concatedComment = `<div class=delete-comment>del</div>`
+        let concatedComment = `<div class=delete-comment>&#215</div>`
         concatedComment += `<div class="comment-text" ; id=${comment.id}>${comment.text}</div>`
 
         concatedLines += `<div class="commentLine">${concatedComment}</div>`
