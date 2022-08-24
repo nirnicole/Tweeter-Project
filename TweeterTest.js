@@ -22,7 +22,7 @@ $('body').on('click', '#postbtn', function() {
   
 //delete comment
 $('#posts').on('click','.delete-comment', function() {
-    let commentId = $(this).siblings("div.comment").attr("id")
+    let commentId = $(this).siblings("div.comment-text").attr("id")
     let postId = $(this).closest(".post").attr("id")
     tweeter.removeComment(postId,commentId);
     tweeterRendering.renderPosts(tweeter.getPosts())
