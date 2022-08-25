@@ -1,5 +1,7 @@
 # Tweeter-Project
-
+  Twitter is an online news and social networking site where people communicate in short messages called tweets.
+  this is mostly a frontend version that let you communicate only with yourself on the local memory.
+  maybe later on, we will add a nice backend to it! stay tuned.
 
 
 ## Table Of Contents
