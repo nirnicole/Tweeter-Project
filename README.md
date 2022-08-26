@@ -21,4 +21,4 @@
 
 ## Direct-Link
     To see the final prodect up and running,
-    [Click Here]([url](https://nirnicole.github.io/Tweeter-Project/src/))
+    [Click Here](https://nirnicole.github.io/Tweeter-Project/src/)
