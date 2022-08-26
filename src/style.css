@@ -1,87 +1,98 @@
 body{
+    display: flex;
+    justify-content: center;
     background-color: #ecf0f1;
     font-family: 'Balthazar', serif;
 }
 
+
 #container{
     display: grid;
-    grid-gap: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
+    grid-gap: clamp(0.3em, 2vh, 1em);
+    padding-left: 1em;
+    padding-right: 1em;
     grid-template-columns: 3fr 1fr;
     grid-template-areas: 
-    "h h" "i i" "b b" "p p"
+    "h h"
+    "i i" 
+    "b b" 
+    "p p";
+    max-width: clamp(50px, 80vw, 500px);
 }
 
 #title{
     grid-area: h;
-    color: #3498db;
-    font-size: 7vw;
     margin: auto;
+    color: #3498db;
+    font-size: clamp(10px, 12vw, 50px);
+    font-weight: bold;
 }
 
 #input{
     grid-area: i;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 80%;
     background-color: #ffffff;
-    padding: 2%;
-    font-size: 1.5vw;
+    padding: 1em;
+    font-size: clamp(4px, 3vw, 15px);
     text-align:center;
 }
 
-#posts{
-    
-    grid-area: p;
-}
-
 #postbtn{
-    grid-area: b;
-    padding: 2%;
-    background-color: #3498db;
-    border: 1px solid #2980b9;
-    box-shadow: 1px 1px 5px #2c3e50;
-    cursor: pointer;
     display: flex;
-    font-size: 2.5vw;
-    width: 10%;
+    grid-area: b;
     margin: auto;
+    padding: clamp(2px, 1.5vw, 7px);
+    background-color: #3498db;
+    border: 2px solid #2980b9;
+    box-shadow: 2px 2px 5px #2c3e50;
+    cursor: pointer;
+    font-size: clamp(5px, 3vw, 15px);
+    font-weight: bold;
     justify-content: center;
 }
 
+#postbtn:active{
+    background-color: #2980b9;
+    color: #8db8c4;
+}
+
+#posts{
+    grid-area: p;
+    margin-top: 1vh;
+}
+
 .post{
+    margin-bottom: 1.5vh;
     position: relative;
     background-color: #a8d1dc;
     box-shadow: 1px 1px 3px;
-    margin: 0.7em;;
     border-radius: 5px;
-    padding: 0.3em;;
-    padding-bottom: 1em;;
+    padding: 3vw;
+    padding-bottom: 4vw;
 }
 
 .post-hidden{
     display: none;
 }
 
-#postbtn:active{
-    background-color: #2980b9
-}
-
 .post-text{
+    margin:0;
+    padding-bottom: 1vh;
     word-wrap: break-word;
-    max-width: 100%;
     font-weight: bold;
-    font-size: 1.7em;
-    margin: 0.7em;
+    font-size: clamp(5px, 6vw, 25px);
 }
 
 
 .commentsContainer{
-    margin: 1em;
-    border-radius: 0.5em;;
+    padding-bottom: 1vw;
 }
 
 .commentLine{
     display: flex;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5vh;
     align-items: flex-start;
     background-color:  #d4e2e6;
     padding: 0.3em;
@@ -89,47 +100,52 @@ body{
 }
 
  .comment-text{
-    max-width: 90%;
     display: inline-block;
+    max-width: 90%;
     padding-left:0.4em;
     color: #00206b;
     word-wrap: break-word;
-    font-size: 1em;
+    font-size: clamp(3px, 3vw, 15px);
  }
  
 .comment-input{
-    margin-left: 1.5em;
     background-color: #d2e2d3;
     border: 1px solid #7ab07a;
-    font-size: 0.7em;
+    font-size: clamp(5px, 1.5vw, 10px);
     padding:0.4em;
 }
 
 .comment-btn{
     grid-area: b;
+    margin-left: 0.3em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
     background-color: #62d065;
     border: 1px solid #a2d2a3;
     border-radius: 0.2em;
     box-shadow: 1px 1px 3px #2c5036;
     cursor: pointer;
     justify-content: center;
-    font-size: 0.6em;
-    margin-left: 0.3em;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
+    font-size: clamp(5px, 1.5vw, 10px);
 }
+
+.comment-btn:active{
+    background-color: #27a12b;
+    color: #70ab72;
+}
+
 
 .delete-comment{
     display: inline-block;
+    margin-right:  0.4em;
     cursor: pointer;
     color: #ecf0f1;
     background-color: #e66152;
     padding-left: 0.2em;
     padding-right: 0.2em;
     border-radius: 0.2em;;
-    font-size: 0.8em;
+    font-size: clamp(3px, 2.4vw, 10px);
     align-self: center;
-    margin-right:  0.4em;
 }
 
 
@@ -141,7 +157,7 @@ body{
     right:0.3em;
     padding: 0.2em;
     border-radius: 0.2em;;
-    font-size: 0.8em;
+    font-size: clamp(5px, 2.4vw, 15px);
 }
 
 /*Floating Back-To-Top Button*/
