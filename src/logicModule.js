@@ -39,7 +39,7 @@ const TweeterLogic = function () {
   const removeComment = (pid, cid) => {
     if (_postMap.has(pid)) {
       const relevantPost = _postMap.get(pid)
-      for (let cIndex in relevantPost.comments) {
+      for (let cIndex=relevantPost.comments.length-1 ; cIndex>=0 ; cIndex--) {
         if (relevantPost.comments[cIndex].id === cid) {
           relevantPost.comments.splice(cIndex, 1)
           break
